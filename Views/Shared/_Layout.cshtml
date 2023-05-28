@@ -15,17 +15,18 @@
     <!--導覽列-->
     <nav class="navbar bg-white navbar-light navbar-expand-lg">
         <div class="container">
-            @Html.ActionLink("服飾平台", "Index", "Home", new { area = "" }, new { @class = "navbar-brand fw-bold fs-1" })
+            @Html.ActionLink("服飾平台", "Index", "Products", new { area = "" }, new { @class = "navbar-brand fw-bold fs-1" })
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             @Html.ActionLink("衣服List", "Index", "Products", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("上傳衣服", "Create", "Products", new { area = "" }, new { @class = "navbar-brand" })
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-lg-auto">
                     <li class="nav-item me-4" style="margin-right: 25px;">
-                        <a href="@Url.Action("Index", "Home")" class="nav-link">
+                        <a href="@Url.Action("Login", "Account")" class="nav-link">
                             <!--會員icon-->
                             <i class="fa-regular fa-user fa-xl"></i>
                         </a>
